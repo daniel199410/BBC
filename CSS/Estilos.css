@@ -47,6 +47,7 @@ a{
 
 #div_login{
 	border-right:none;
+	border-bottom:solid 5px #fff;
 }
 
 #div_login:hover{
@@ -184,6 +185,7 @@ nav ul{
 }
 nav ul li{
 	width:auto;
+	border-bottom: 3px solid #a91717;
 }
 nav ul li:hover{
 	border-bottom: 3px solid white;
@@ -191,6 +193,7 @@ nav ul li:hover{
 nav ul li a{
 	display:block;
 	margin: 10px 0;
+	margin-bottom:7px;
     padding: 0 6px;
 	border-right:1px solid #c93e3b;
 	text-decoration:none;
@@ -380,7 +383,7 @@ aside .social h2{
 	color:#1167a8;
 }
 
-.socios i, .videos i{
+.socios i, .videos i, .photos i{
 	color:#cc0000;
 }
 
@@ -458,7 +461,7 @@ aside .social h2{
 }
 
 /*Sección de dos columnas por una fila*/
-.section2col1row, .section2col2row, .videos{
+.section2col1row, .section2col2row, .videos, .photos{
 	padding-top: 20px;
 	padding-bottom: 40px;
     border-bottom: 1px solid #dbdbdb;
@@ -498,7 +501,66 @@ aside .social h2{
 	width:53%;
 }
 
-.videos h2{
+.videos h2, .photos h2{
 	font-weight: bold;
     font-size: 1.5rem;
+}
+
+/*Galería de imágenes*/
+.photos{
+	width:80%;
+	margin:0 auto;
+}
+
+.gallery{
+	position:relative;
+}
+
+.main_pic{
+	width:60%;
+	background-color:#151212;
+	position:relative;
+}
+
+.subgalley{
+	width:40%;
+	background-color:#1f1f1f;
+}
+
+.pic{
+	overflow:hidden;
+	position:relative;
+	margin:10px;
+}
+
+.pic_txt a h3, .pic_txt a p{
+	color:white;
+}
+
+.pic_txt{
+	position:absolute;
+	bottom:0;
+	padding:10px;
+	margin:10px;
+	background-color:rgba(31,31,31,0.5);
+}
+
+.pic_txt h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+	padding-bottom:5px;
+}
+
+.pic_txt p{
+	font-size:0.9rem;
+}
+
+.pic_txt a:hover h3{
+	text-decoration:underline;
+}
+
+.pic_txt i{
+    color: white;
+    font-size: 1rem;
+    padding-right: 2px;
 }
